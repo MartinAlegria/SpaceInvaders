@@ -69411,7 +69411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.1
-  shot: {fileID: 7888512710542075435, guid: 95e862d2aa33d4d39812c1fddecaf9b8, type: 3}
+  bullet: {fileID: 7888512710542075435, guid: 95e862d2aa33d4d39812c1fddecaf9b8, type: 3}
   fireRate: 0.996
 --- !u!1 &1102350886
 GameObject:
@@ -135407,9 +135407,9 @@ MonoBehaviour:
   speed: 0.35
   maxPoint: 10.5
   minPoint: -10.5
-  shot: {fileID: 2899090204668564112, guid: 6b74325dd9f9045c29069edcec5fb3b4, type: 3}
-  shotSpawn: {fileID: 7776582888944919390}
-  fireRate: 0.7
+  bullet: {fileID: 2899090204668564112, guid: 6b74325dd9f9045c29069edcec5fb3b4, type: 3}
+  bulletSpawn: {fileID: 7776582888944919390}
+  fireRate: 0.5
 --- !u!54 &7106292054945613355
 Rigidbody:
   m_ObjectHideFlags: 0
