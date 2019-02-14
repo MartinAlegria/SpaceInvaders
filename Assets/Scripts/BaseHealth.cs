@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BaseHealth : MonoBehaviour
 {
-	public float health = 2;
+	public float health = 6;
 
     // Update is called once per frame
     void Update()

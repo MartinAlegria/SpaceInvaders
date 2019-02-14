@@ -31,7 +31,10 @@ public class BulletControler : MonoBehaviour
     		PlayerScore.playerScore += 10;
     		
     	}else if (other.tag == "Base"){
-    		Destroy(gameObject);
+    		GameObject playerBase = other.gameObject;
+			BaseHealth baseHealth = playerBase.GetComponent<BaseHealth> ();
+			baseHealth.health -= 1;
+			Destroy (gameObject);
     	}
     }
 

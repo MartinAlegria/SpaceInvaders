@@ -26884,7 +26884,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 414274768}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -26901,7 +26901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63d89bf03dd6d4d3f82db63c948cd8e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
+  health: 6
 --- !u!23 &414274772
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29962,8 +29962,8 @@ GameObject:
   - component: {fileID: 469442461}
   - component: {fileID: 469442460}
   - component: {fileID: 469442458}
-  - component: {fileID: 469442459}
   - component: {fileID: 469442462}
+  - component: {fileID: 469442459}
   m_Layer: 0
   m_Name: Base2
   m_TagString: Base
@@ -30071,7 +30071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63d89bf03dd6d4d3f82db63c948cd8e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
+  health: 6
 --- !u!1 &471973181
 GameObject:
   m_ObjectHideFlags: 0
@@ -48562,6 +48562,7 @@ GameObject:
   - component: {fileID: 762169575}
   - component: {fileID: 762169577}
   - component: {fileID: 762169576}
+  - component: {fileID: 762169578}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: Untagged
@@ -48595,7 +48596,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 762169574}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -48620,8 +48621,9 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 0
   m_Text: 'GAME OVER
+
 
 '
 --- !u!222 &762169577
@@ -48632,6 +48634,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 762169574}
   m_CullTransparentMesh: 0
+--- !u!114 &762169578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762169574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 123c1aada40a048b99ffedd69d14f78f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &762230231
 GameObject:
   m_ObjectHideFlags: 0
@@ -68261,7 +68275,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1072498208}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -68278,7 +68292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63d89bf03dd6d4d3f82db63c948cd8e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
+  health: 6
 --- !u!23 &1072498212
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -69397,8 +69411,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.1
-  shot: {fileID: 0}
-  fireRate: 0.997
+  shot: {fileID: 7888512710542075435, guid: 95e862d2aa33d4d39812c1fddecaf9b8, type: 3}
+  fireRate: 0.996
 --- !u!1 &1102350886
 GameObject:
   m_ObjectHideFlags: 0
@@ -76141,7 +76155,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1220565599}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -76233,7 +76247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63d89bf03dd6d4d3f82db63c948cd8e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
+  health: 6
 --- !u!1 &1221884933
 GameObject:
   m_ObjectHideFlags: 0
@@ -135395,7 +135409,7 @@ MonoBehaviour:
   minPoint: -10.5
   shot: {fileID: 2899090204668564112, guid: 6b74325dd9f9045c29069edcec5fb3b4, type: 3}
   shotSpawn: {fileID: 7776582888944919390}
-  fireRate: 0.2
+  fireRate: 0.7
 --- !u!54 &7106292054945613355
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -28,20 +28,25 @@ public class EnemyController : MonoBehaviour
     			return;
     		}
 
+    		if(Random.value > fireRate){
+    			Instantiate(shot, enemy.position, enemy.rotation);
+    		}
+
     		if(enemy.position.y <= -4){
     			GameOver.isDead = true;
     			Time.timeScale = 0;
     		}
 
-    		if(enemyHolder.childCount== 1){
+    	}
+
+    	if(enemyHolder.childCount == 1){
     			CancelInvoke();
     			InvokeRepeating("MoveEnemy", 0.1f, 0.25f);
     		}
 
     		if(enemyHolder.childCount == 0){
     			PlayerScore.playerScore = 0;
-    			SceneManager.LoadScene("SampleScene");
+    			GameOver.win = true;
     		}
-    	}
     }
 }

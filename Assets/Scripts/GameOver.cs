@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class GameOver : MonoBehaviour
 {
 	public static bool isDead = false;
+	public static bool win = false;
 	private Text gameOver;
     // Start is called before the first frame update
     void Start()
@@ -17,8 +18,15 @@ public class GameOver : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     	if(isDead)
+     	if(isDead){
      		Time.timeScale = 0;
-     		gameOver.enabled = true;   
+     		gameOver.enabled = true;
+     	}   
+
+     	if(win){
+     		gameOver.text = "You WIN";
+     		Time.timeScale = 0;
+     		gameOver.enabled = true;
+     	}
     }
 }
